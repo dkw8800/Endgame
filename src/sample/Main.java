@@ -60,7 +60,7 @@ public class Main extends Application {
 
         Pane intro = new Pane();
         Button begin = new Button("Begin Game");
-        Label pagetitle = new Label("Instructions \n Welcome to Endangered Game: The End Game! Help support the cause so endangered animals may have another chance at flourishing. \n To play this game, click the card icon to get a randomly generated card. This will help you move. On the game board, you will see another game piece. That is the poacher piece. \n You must pass the poacher AND make it around the board to be able to win. If you fail to pass the poacher, you must keep going around the board until you do. Enjoy our game!");
+        Label pagetitle = new Label("Instructions \n Welcome to Endangered Game: The End Game! Help support the cause so endangered animals may have another \n chance at flourishing. \n To play this game, click the card icon to get a randomly generated card. This will help you move. On the game board, you will see another game piece. \n That is the poacher piece. You must pass the poacher AND make it around the board to be able to win. If you fail to pass the poacher, you must keep going around the board \n until you do. Enjoy our game!");
         begin.setOnAction(event -> primaryStage.setScene(mainpage));
         intro.getChildren().addAll(pagetitle, begin);
         intropage = new Scene(intro, 800, 700);
@@ -142,15 +142,6 @@ public class Main extends Application {
     {
         for(int i = 0; i < moves; i ++)
         {
-            if(xval == 665 && yval != 800)
-                piece.relocate(xval,yval+62.5);
-            else if(xval == 665 && yval == 800)
-                piece.relocate(xval - 62.5,yval);
-            else if(xval == 40 && yval == 800)
-                piece.relocate(xval,yval-62.5);
-            else if(yval == 40 && xval == 540)
-                checkwin();
-            else
                 piece.relocate(xval + 62.5,yval);
         }
         //double[] xspots = {40,102.5,165,227.5,290,352.5,415,477.5,540};
