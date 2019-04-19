@@ -1,0 +1,54 @@
+#carddeckbutton
+{
+-fx-background-image:url("/sample/EndgamePictures/newbg.png");
+-fx-padding:50 100;
+}
+
+#titlepg
+{
+-fx-background-image:url("/sample/EndgamePictures/newbg.jpg");
+-fx-background-size:800 700;
+}
+
+#mainpage
+{
+-fx-background-image:url("/sample/EndgamePictures/endgamebg.png");
+-fx-background-size:800 700;
+}
+
+#starter,#beginner
+{
+-fx-padding:30 125;
+}
+
+#intropage
+{
+-fx-background-color:deepskyblue;
+}
+
+#poacher
+{
+-fx-background-image:url("/sample/EndgamePictures/poacher.png");
+-fx-background-size:100%;
+}
+
+
+#player
+{
+-fx-background-image:url("/sample/EndgamePictures/player.png");
+-fx-background-size:150%;
+}
+
+#player,#poacher
+{
+-fx-padding:20;
+}
+
+#carddisplayed
+{
+-fx-background-image:url("/sample/EndgamePictures/newbg.png");
+-fx-padding:50 100;
+-fx-background-size:100%;
+}
+
+
